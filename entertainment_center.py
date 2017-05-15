@@ -1,5 +1,6 @@
 import fresh_tomatoes
 import media
+# imports and provides access to media and fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life.",
@@ -20,8 +21,10 @@ avatar = media.Movie("Avatar",
                      "December, 2009")
 
 batman = media.Movie("The LEGO Batman Movie",
-                     "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.",
-                     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+                     """A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, 
+                     while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.""",
+                     """https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTA
+                     yNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg""",
                      "https://www.youtube.com/watch?v=LZSQTVdF3QM",
                      "Chris McKay",
                      "https://en.wikipedia.org/wiki/Chris_McKay",
