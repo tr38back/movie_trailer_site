@@ -18,9 +18,8 @@ main_page_head = '''
             padding-top: 80px;
         }
         #trailer .modal-dialog {
-            margin-top: 200px;
-            width: 640px;
-            height: 480px;
+            margin-top: 10%;
+            width: 80%;
         }
         .hanging-close {
             position: absolute;
@@ -36,7 +35,7 @@ main_page_head = '''
             margin-bottom: 20px;
             padding-top: 20px;
         }
-        .movie-tile:hover {
+        .img, .movie-name:hover {
             background-color: #EEE;
             cursor: pointer;
         }
@@ -57,6 +56,14 @@ main_page_head = '''
         display: block;
         height: 0;
         clear: both;
+        }
+
+        .storyline, a {
+            color: #0645AD;
+        }
+        .storyline:hover {
+            color: #0B0080;
+            text-decoration: underline;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -104,6 +111,7 @@ main_page_content = '''
         </div>
       </div>
     </div>
+    <!-- end Trailer Video Modal -->
     <div class="alert alert-success" style="width: 70%; margin: auto;" >
      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
       <h2 style="font-size: 1.5em; margin: 0px;"><strong>Holden & Pen!</strong></h2>
@@ -128,7 +136,7 @@ main_page_content = '''
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" style="display: flex; flex-wrap: wrap;">
       {movie_tiles}
     </div>
   </body>
@@ -139,10 +147,16 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center">
     <img class="img" src="{poster_image_url}" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer" width="220" height="342">
-    
+
     <h2 class="movie-name" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer" >{movie_title}</h2>
+
+    <h5 class="storyline" data-toggle="collapse" data-target="#{safe_title}">Storyline</h5>
+  <div id="{safe_title}" class="collapse">
+    {movie_storyline}
+  </div>
+
     <h4>Production Info</h2>
-    
+
     <p>
     Director: <a href="{director_link}" target="_blank">{director}</a><br>
     Production Studio: {studio}<br>
@@ -169,8 +183,10 @@ def create_movie_tiles_content(movies):
             director= movie.director,
             studio= movie.studio,
             release= movie.release,
-            director_link = movie.director_link
-            
+            director_link = movie.director_link,
+            movie_storyline = movie.storyline,
+            safe_title = movie.safe_title
+
         )
     return content
 

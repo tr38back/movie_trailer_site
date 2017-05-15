@@ -6,11 +6,12 @@ class Movie():
     '''
 
     
-    def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube, director, director_link, studio, release):
+    def __init__(self, movie_title, safe_title, movie_storyline, poster_image, trailer_youtube, director, director_link, studio, release):
         '''
         Initialize the movie instance.
         Inputs:
             movie_title         => Title of the movie
+            safe_title          => Title with no spaces for class/id
             movie_storyline     => Brief synopsis of the movie
             poster_image        => Image of the movie poster
             trailer_youtube     => Movie trailer on YouTube
@@ -28,6 +29,7 @@ class Movie():
         self.studio = studio
         self.release = release
         self.director_link = director_link
+        self.safe_title = safe_title
 
     def show_trailer(self):
         # Opens webbrowser with movie trailer
