@@ -5,8 +5,7 @@ import media
 toy_story = media.Movie("Toy Story",
                         "toyStory",
                         "A story of a boy and his toys that come to life.",
-                        ("http://vignette3.wikia.nocookie.net/disney/images/1/13/Toy_Story.jpg"
-                        "/revision/latest?cb=20151003163558"),
+                        "http://vignette3.wikia.nocookie.net/disney/images/1/13/Toy_Story.jpg/revision/latest?cb=20151003163558",  # noqa
                         "https://www.youtube.com/watch?v=vwyZH85NQC4",
                         "John Lasseter",
                         "https://en.wikipedia.org/wiki/John_Lasseter",
@@ -16,7 +15,7 @@ toy_story = media.Movie("Toy Story",
 avatar = media.Movie("Avatar",
                      "avatar",
                      "A Marine on an alien planet.",
-                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
+                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",  # noqa
                      "https://www.youtube.com/watch?v=cRdxXPV9GNQ",
                      "James Cameron",
                      "https://en.wikipedia.org/wiki/James_Cameron",
@@ -24,32 +23,26 @@ avatar = media.Movie("Avatar",
                      "December, 2009")
 
 batman = media.Movie("The LEGO Batman Movie",
-<<<<<<< Updated upstream
-                     """A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, 
-                     while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.""",
-                     """https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTA
-                     yNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg""",
-=======
                      "legoBatmanMovie",
-                     ("A cooler-than-ever Bruce Wayne must deal with the usual suspects as they"
-                      " plan to rule Gotham City, while discovering that he has accidentally"
-                      " adopted a teenage orphan who wishes to become his sidekick."),
-                     ("https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNT"
-                      "EyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"),
->>>>>>> Stashed changes
+                     """A cooler-than-ever Bruce Wayne must deal with the
+                      usual suspects as they plan to rule Gotham City,
+                      while discovering that he has accidentally adopted
+                      a teenage orphan who wishes to become his sidekick.""",
+                     "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",  # noqa
                      "https://www.youtube.com/watch?v=LZSQTVdF3QM",
                      "Chris McKay",
                      "https://en.wikipedia.org/wiki/Chris_McKay",
                      "Warner, DC",
                      "February, 2017")
-                     
+
 
 trolls = media.Movie("Trolls",
                      "trolls",
-                     ("After the Bergens invade Troll Village, Poppy, the happiest Troll ever"
-                      " born, and the overly-cautious, curmudgeonly Branch set off on a "
-                      "journey to rescue her friends."),
-                     "https://upload.wikimedia.org/wikipedia/en/a/ad/Trolls_%28film%29_logo.png",
+                     """After the Bergens invade Troll Village, Poppy, the
+                       happiest Troll ever born, and the overly-cautious,
+                       curmudgeonly Branch set off on a journey to rescue
+                       her friends.""",
+                     "https://upload.wikimedia.org/wikipedia/en/a/ad/Trolls_%28film%29_logo.png",  # noqa
                      "https://www.youtube.com/watch?v=xyjm5VQ11TQ",
                      "Mike Mitchell",
                      "https://en.wikipedia.org/wiki/Mike_Mitchell_(director)",
@@ -58,14 +51,17 @@ trolls = media.Movie("Trolls",
 
 jungle_book = media.Movie("The Jungle Book",
                           "jungleBook",
-                          ("Raised by a family of wolves since birth, Mowgli must leave the only"
-                           " home he's ever known when the fearsome tiger Shere Khan unleashes"
-                           " his mighty roar. Guided by a no-nonsense panther and a free-spirited"
-                           " bear, the young boy meets an array of jungle animals, including "
-                           "a slithery python and a smooth-talking ape. Along the way, Mowgli"
-                           " learns valuable life lessons as his epic journey of self-discovery"
-                           " leads to fun and adventure."),
-                          "https://upload.wikimedia.org/wikipedia/en/a/a4/The_Jungle_Book_%282016%29.jpg",
+                          """Raised by a family of wolves since birth, Mowgli
+                             must leave the only home he's ever known when
+                             the fearsome tiger Shere Khan unleashes his
+                            mighty roar. Guided by a no-nonsense panther and
+                             a free-spirited bear, the young boy meets an
+                            array of jungle animals, including a slithery
+                            python and a smooth-talking ape. Along the way,
+                             Mowgli learns valuable life lessons as his epic
+                             journey of self-discovery leads to fun and
+                            adventure.""",
+                          "https://upload.wikimedia.org/wikipedia/en/a/a4/The_Jungle_Book_%282016%29.jpg",  # noqa
                           "https://www.youtube.com/watch?v=e8TPW6rFZpA",
                           "Jon Favreau",
                           "https://en.wikipedia.org/wiki/Jon_Favreau",
@@ -74,12 +70,12 @@ jungle_book = media.Movie("The Jungle Book",
 
 force_awakens = media.Movie("Star Wars: The Force Awakens",
                             "forceAwakens",
-                            ("Three decades after the defeat of the Galactic Empire, a new threat"
-                            " arises. The First Order attempts to rule the galaxy and only a "
-                            "ragtag group of heroes can stop them, along with the "
-                            "help of the Resistance."),
-                            ("https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_"
-                             "The_Force_Awakens_Theatrical_Poster.jpg"),
+                            """Three decades after the defeat of the Galactic
+                              Empire, a new threat arises. The First Order
+                              attempts to rule the galaxy and only a ragtag
+                              group of heroes can stop them, along with the
+                             help of the Resistance.""",
+                            "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",  # noqa
                             "https://www.youtube.com/watch?v=UitsQDWSlUg",
                             "J.J. Abrams",
                             "https://en.wikipedia.org/wiki/J._J._Abrams",
